@@ -1,0 +1,34 @@
+﻿@model WeatherApp.Web.Models.WeatherModel
+@{
+    ViewBag.Title = "Weather - Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+        <div class="content-wrapper">
+            <table>
+                        <tr>
+                            <td>You Live In @Model.Name</td>
+                        </tr>
+                        <tr>
+                            <td>The weather there can be best described as @Model.Weather[0].Description</td>
+                        </tr>
+                        <tr>
+                            <td>The Temperature there is @Model.Main.Temp</td>
+                        </tr>
+                        <tr>
+                            <td>It can go up to @Model.Main.TempMax</td>
+                        </tr>
+                        <tr>
+                            <td>It can drop down to @Model.Main.TempMin</td>
+                        </tr>
+                        <tr>
+                            <td>The level of atmospheric pressure is @Model.Main.Pressure</td>
+
+                        </tr>
+                        <tr>
+                            <td>The humidity is @Model.Main.Humidity</td>
+                        </tr>
+            </table>
+        </div>
+
+
+    
